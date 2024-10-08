@@ -53,22 +53,3 @@ La aplicación clasificará la imagen como COVID-19 o Normal utilizando el model
 
 La aplicación también está dockerizada, lo que significa que puedes correrla dentro de un contenedor Docker para mayor portabilidad.
 
-## Archivo de configuración config.yaml
-
-El archivo config.yaml contiene los parámetros clave para entrenar el modelo. Se puede configurar desde allí.
-
----
-
-## Entrenamiento del modelo
-
-Cómo entrenar el modelo
-
-El entrenamiento del modelo está definido en src/model.py. Este script:
-
-Carga los datos de entrenamiento y validación desde las carpetas especificadas.
-Define la arquitectura del modelo utilizando DenseNet121.
-Compila el modelo con el optimizador Adam.
-Entrena el modelo utilizando los generadores de datos.
-Guarda el mejor modelo encontrado durante el entrenamiento.
-
-Para ejecutar el entrenamiento, asegúrate de tener los datos organizados en las carpetas adecuadas y luego corre el script.
